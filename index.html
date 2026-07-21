@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AL IHSAN Business &amp; Internet Services</title>
+    <meta name="description" content="AL IHSAN Business and Internet Services - Your trusted partner for business registration, documentation, and digital services." />
+
+    <!-- Favicon -->
+    <link rel="icon" href="logo.png" type="image/png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ============================================================
+    LOADING SCREEN
+    ============================================================ -->
+    <div id="loader" role="status" aria-label="Loading">
+        <div class="loader-ring">
+            <img src="logo.png" alt="AL IHSAN Logo" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%2300b4d8%22/><text x=%2250%22 y=%2270%22 font-size=%2248%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22>AI</text></svg>';" />
+        </div>
+        <div class="loader-text">AL <span>IHSAN</span></div>
+    </div>
+
+    <!-- ============================================================
+    TOAST / CUSTOM ALERT
+    ============================================================ -->
+    <div class="toast-message" id="toastMessage">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastText">Thank you for contacting Alihsan Business and Internet Services!</span>
+        <button class="toast-close" id="toastClose" aria-label="Close message">&times;</button>
+    </div>
+
+    <!-- ============================================================
+    NAV OVERLAY
+    ============================================================ -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ============================================================
+    NAVIGATION
+    ============================================================ -->
+    <header class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a href="#hero" class="nav-brand" aria-label="AL IHSAN Business Home">
+                <img src="logo.png" alt="AL IHSAN Logo" class="logo-img" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%2300b4d8%22/><text x=%2250%22 y=%2270%22 font-size=%2248%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22>AI</text></svg>';" />
+                <span class="brand-text">
+                    <span class="main">AL IHSAN</span>
+                    <span class="sub">Business &amp; Internet Services</span>
+                </span>
+            </a>
+
+            <nav class="nav-links" id="navLinks" role="menubar">
+                <a href="#hero" role="menuitem" class="active">Home</a>
+                <a href="#about" role="menuitem">About</a>
+                <a href="#services" role="menuitem">Services</a>
+                <a href="#why-choose" role="menuitem">Why Us</a>
+                <a href="#contact" role="menuitem">Contact</a>
+                <a href="#contact" class="btn-nav" role="menuitem">
+                    <i class="fas fa-paper-plane"></i> Get Started
+                </a>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============================================================
+    HERO SECTION
+    ============================================================ -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+        <!-- Logo as background (subtle) -->
+        <div class="hero-bg-logo" aria-hidden="true">
+            <img src="logo.png" alt="" onerror="this.style.display='none';" />
+        </div>
+
+        <!-- Shapes & Orbs -->
+        <div class="hero-shapes" aria-hidden="true">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-orbs" aria-hidden="true">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-check-circle"></i> Trusted Since 2015
+                </div>
+
+                <div class="hero-brand">
+                    <span class="hero-brand-text">
+                        <span class="name">AL <span class="accent">IHSAN</span></span>
+                        <span class="tagline">Business &amp; Internet Services</span>
+                    </span>
+                </div>
+
+                <h1 id="hero-title">
+                    Your Trusted <span class="highlight">Business Registration</span> &amp; Digital Service Partner
+                </h1>
+
+                <p>
+                    Fast, professional, and affordable — we help you register your business,
+                    process documents, and access essential digital services with ease.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Contact Us
+                    </a>
+                    <a href="#services" class="btn btn-secondary">
+                        <i class="fas fa-arrow-right"></i> Explore Services
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Businesses Registered</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support Available</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Why AL IHSAN?</h3>
+                    <p>Your one-stop shop for business registration, documentation, and internet services.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> CAC &amp; SMEDAN Registration</li>
+                        <li><i class="fas fa-check"></i> Printing &amp; Document Services</li>
+                        <li><i class="fas fa-check"></i> Internet &amp; Digital Solutions</li>
+                        <li><i class="fas fa-check"></i> Fast, Reliable &amp; Affordable</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    ABOUT
+    ============================================================ -->
+    <section class="about" id="about" aria-labelledby="about-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">About Us</span>
+                <h2 class="section-title" id="about-title">
+                    Committed to <span class="highlight">Excellence</span> in Service
+                </h2>
+                <p class="section-subtitle mx-auto">
+                    AL IHSAN Business and Internet Services is a trusted provider of business
+                    registration, documentation, and digital solutions across Nigeria.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="about-icon"><i class="fas fa-building-columns"></i></div>
+                    <h3>Your Partner in Growth</h3>
+                    <p>
+                        We combine professional expertise with a personal touch to help
+                        individuals and businesses thrive.
+                    </p>
+                    <div class="floating-badge">
+                        <i class="fas fa-star"></i> 5+ Years of Trust
+                    </div>
+                </div>
+
+                <div class="about-text reveal">
+                    <p style="font-size:1.05rem; color: var(--text-muted); line-height:1.9; margin-bottom:8px;">
+                        We understand that every client is unique. That's why we offer tailored
+                        services that are fast, affordable, and reliable — ensuring your complete
+                        satisfaction every step of the way.
+                    </p>
+                    <ul class="about-highlights">
+                        <li><i class="fas fa-bolt"></i> Fast Turnaround</li>
+                        <li><i class="fas fa-tag"></i> Affordable Pricing</li>
+                        <li><i class="fas fa-headset"></i> Professional Support</li>
+                        <li><i class="fas fa-file-signature"></i> Trusted Documentation</li>
+                        <li><i class="fas fa-globe"></i> Digital &amp; Internet Solutions</li>
+                        <li><i class="fas fa-smile"></i> Customer Satisfaction</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline" style="margin-top: 20px;">
+                        <i class="fas fa-envelope"></i> Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    SERVICES
+    ============================================================ -->
+    <section class="services" id="services" aria-labelledby="services-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What We Offer</span>
+                <h2 class="section-title" id="services-title">
+                    Our <span class="highlight">Services</span>
+                </h2>
+                <p class="section-subtitle mx-auto">
+                    Comprehensive solutions tailored to meet your business and personal needs.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-building"></i></div>
+                    <h4>CAC Registration</h4>
+                    <p>Business registration with the Corporate Affairs Commission.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-clock"></i></div>
+                    <h4>One Minute Password</h4>
+                    <p>Instant password generation for your digital needs.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-id-card"></i></div>
+                    <h4>Plastic NIN</h4>
+                    <p>National Identification Number plastic card printing.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-camera"></i></div>
+                    <h4>Scanning</h4>
+                    <p>High-quality document scanning services.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+                    <h4>Laminating</h4>
+                    <p>Professional lamination for documents and IDs.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+                    <h4>SMEDAN Registration</h4>
+                    <p>Registration with the Small and Medium Enterprises Development Agency.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-font"></i></div>
+                    <h4>Typesetting</h4>
+                    <p>Professional typesetting for books, documents, and publications.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-keyboard"></i></div>
+                    <h4>Manual Typing</h4>
+                    <p>Accurate and fast manual typing services.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-print"></i></div>
+                    <h4>Printing</h4>
+                    <p>High-quality printing for all your document needs.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-palette"></i></div>
+                    <h4>Colour Printing &amp; Photocopy</h4>
+                    <p>Vibrant colour printing and photocopy services.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-file-pdf"></i></div>
+                    <h4>Printing JAMB Results</h4>
+                    <p>Official JAMB result printing services.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-ticket-alt"></i></div>
+                    <h4>Scratch Cards</h4>
+                    <p>WAEC, NECO, NBAIS &amp; NABTEB scratch cards.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h4>SCUMB</h4>
+                    <p>Specialized academic and professional services.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-book"></i></div>
+                    <h4>Spiral Binding</h4>
+                    <p>Professional spiral binding for books and documents.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-wifi"></i></div>
+                    <h4>Internet Services</h4>
+                    <p>Reliable internet solutions for your business and home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    WHY CHOOSE US
+    ============================================================ -->
+    <section class="why-choose" id="why-choose" aria-labelledby="why-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Why Choose Us</span>
+                <h2 class="section-title" id="why-title">
+                    Built on <span class="highlight">Trust</span> &amp; Excellence
+                </h2>
+                <p class="section-subtitle mx-auto">
+                    We go above and beyond to deliver exceptional value to every client.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <span class="feature-icon"><i class="fas fa-rocket"></i></span>
+                    <h4>Fast Delivery</h4>
+                    <p>We value your time and deliver services promptly.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <span class="feature-icon"><i class="fas fa-coins"></i></span>
+                    <h4>Affordable Prices</h4>
+                    <p>Top-notch services at competitive, budget-friendly rates.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <span class="feature-icon"><i class="fas fa-handshake"></i></span>
+                    <h4>Trusted Services</h4>
+                    <p>Reliable and transparent services you can count on.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <span class="feature-icon"><i class="fas fa-user-tie"></i></span>
+                    <h4>Professional Assistance</h4>
+                    <p>Expert guidance from a dedicated and friendly team.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <span class="feature-icon"><i class="fas fa-lock"></i></span>
+                    <h4>Secure Transactions</h4>
+                    <p>Your data and transactions are always safe with us.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <span class="feature-icon"><i class="fas fa-star"></i></span>
+                    <h4>Customer Satisfaction</h4>
+                    <p>Your happiness is our top priority — we deliver results.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <span class="feature-icon"><i class="fas fa-award"></i></span>
+                    <h4>Quality Service</h4>
+                    <p>Every service is delivered with the highest quality standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CONTACT
+    ============================================================ -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get in Touch</span>
+                <h2 class="section-title" id="contact-title">
+                    Let's <span class="highlight">Connect</span>
+                </h2>
+                <p class="section-subtitle mx-auto">
+                    Reach out to us today — we're here to help with all your business
+                    and internet service needs.
+                </p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info reveal">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info-content">
+                            <label>Email</label>
+                            <p><a href="mailto:alihsanbusiness@gmail.com">alihsanbusiness@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-phone"></i></div>
+                        <div class="info-content">
+                            <label>Phone</label>
+                            <p><a href="tel:08062257214">080 6225 7214</a></p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-clock"></i></div>
+                        <div class="info-content">
+                            <label>Business Hours</label>
+                            <p>Mon – Sat: 8:00 AM – 6:00 PM</p>
+                        </div>
+                    </div>
+
+                    <!-- Bank Details -->
+                    <div class="bank-card">
+                        <div class="bank-label"><i class="fas fa-university"></i> Payment Details</div>
+                        <div class="bank-name">OPay</div>
+                        <div class="bank-detail">
+                            <span class="label">Account Number</span>
+                            <span class="value">8062257214</span>
+                        </div>
+                        <div class="bank-detail">
+                            <span class="label">Account Name</span>
+                            <span class="value">AL IHSAN BUSINESS AND INTERNET SERVICES</span>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div style="margin-top: 6px;">
+                        <label style="font-size:0.75rem; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); display:block; margin-bottom:8px;">
+                            <i class="fas fa-share-alt" style="color:var(--accent);"></i> Follow Us
+                        </label>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram" class="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter / X" class="twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="WhatsApp" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form reveal">
+                    <h3>Send a Message</h3>
+                    <p class="form-sub">We'll respond within 24 hours.</p>
+
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="fullName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="fullName" class="form-control" placeholder="Muhammad Bashir" required />
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" class="form-control" placeholder="you@example.com" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" class="form-control" placeholder="080 1234 5678" required />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Needed <span class="required">*</span></label>
+                            <select id="service" class="form-control" required>
+                                <option value="">— Select a service —</option>
+                                <option value="CAC Registration">CAC Registration</option>
+                                <option value="One Minute Password">One Minute Password</option>
+                                <option value="Plastic NIN">Plastic NIN</option>
+                                <option value="Scanning">Scanning</option>
+                                <option value="Laminating">Laminating</option>
+                                <option value="SMEDAN Registration">SMEDAN Registration</option>
+                                <option value="Typesetting">Typesetting</option>
+                                <option value="Manual Typing">Manual Typing</option>
+                                <option value="Printing">Printing</option>
+                                <option value="Colour Printing &amp; Photocopy">Colour Printing &amp; Photocopy</option>
+                                <option value="Printing JAMB Results">Printing JAMB Results</option>
+                                <option value="Scratch Cards">Scratch Cards (WAEC, NECO, NBAIS &amp; NABTEB)</option>
+                                <option value="SCUMB">SCUMB</option>
+                                <option value="Spiral Binding">Spiral Binding</option>
+                                <option value="Internet Services">Internet Services</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" class="form-control" placeholder="Tell us how we can help you…" rows="4" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="AL IHSAN Logo" class="logo-img-sm" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%2300b4d8%22/><text x=%2250%22 y=%2270%22 font-size=%2248%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22>AI</text></svg>';" />
+                        <span class="brand-name">
+                            AL IHSAN
+                            <small>Business &amp; Internet Services</small>
+                        </span>
+                    </div>
+                    <p>
+                        Your trusted partner for business registration, documentation,
+                        printing, and internet solutions across Nigeria.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter / X"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why-choose">Why Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#services">CAC Registration</a></li>
+                        <li><a href="#services">Printing &amp; Laminating</a></li>
+                        <li><a href="#services">Internet Services</a></li>
+                        <li><a href="#services">SMEDAN Registration</a></li>
+                        <li><a href="#services">Scratch Cards</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:alihsanbusiness@gmail.com">alihsanbusiness@gmail.com</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:08062257214">080 6225 7214</a></li>
+                        <li><i class="fas fa-university"></i> OPay: 8062257214</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; 2026 AL IHSAN Business &amp; Internet Services. All rights reserved.</span>
+                <span class="credit">Designed with <span>❤</span> &amp; professionalism</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    SCROLL TO TOP
+    ============================================================ -->
+    <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ============================================================
+    EXTERNAL JAVASCRIPT
+    ============================================================ -->
+    <script src="script.js"></script>
+
+</body>
+</html>
