@@ -18,6 +18,12 @@
 
     let toastTimeout = null;
 
+    // ---- FOOTER YEAR ----
+    const yearSpan = document.getElementById('currentYear');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+
     // ---- LOADER ----
     window.addEventListener('load', function() {
         setTimeout(function() {
